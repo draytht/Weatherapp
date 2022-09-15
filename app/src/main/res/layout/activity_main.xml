@@ -14,6 +14,7 @@
          android:text="@string/city_name"
          android:textAlignment="center"
          android:textSize="18sp"
+        android:textStyle="bold"
          app:layout_constraintStart_toStartOf="parent"
          app:layout_constraintEnd_toEndOf="parent"
          app:layout_constraintTop_toTopOf="parent" />
@@ -24,26 +25,84 @@
         android:layout_height="wrap_content"
         android:text="@string/current_temp"
         android:textSize="72sp"
+        android:textStyle="bold"
         app:layout_marginStart="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/city_name" />
+        app:layout_constraint
 
 
 /*   <ImageView
         android:id="@+id/current_condition_icon"
         android:layout_width="72dp"
         android:layout_height="72dp"
-        android:src="@drawble/sun_icon"
+        android:src="@drawable/sun_icon"
         android:importantForAccessibility="no"
         android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/current_temp"
         app:layout_constraintBottom_toBottomOf="@id/current_temp"
 
-    <resoures>
-        <string name="app_name">WeatherApp</string>
+    <TextView
+        android:id="@+id/condition"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:text="@string/condition"
+        android:textAlignment="viewStart"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_temp" />
 
-    </resoures>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewStart"
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+        android:text="Low 65°"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/condition" />
+        />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewStart"
+        android:paddingTop="0dp"
+        android:textSize="18sp"
+        android:text="High 80°"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewStart"
+        android:paddingTop="0dp"
+        android:textSize="18sp"
+        android:text="Humidity 100%"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1" />
+    />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewStart"
+        android:paddingTop="0dp"
+        android:textSize="18sp"
+        android:text="Pressure 1023 hPa"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
+    />
+
 */
 
 </androidx.constraintlayout.widget.ConstraintLayout>
